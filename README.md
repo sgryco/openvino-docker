@@ -39,6 +39,7 @@ sudo ldconfig
 
 
 # Training our own classifier and running the inference on the Neural compute stick
+Here, we will see how to train a custom image classifier and run it on the NCS.
 ## Setup fast.ai
 See [fastai-docker](https://github.com/sgryco/fastaidocker)
 
