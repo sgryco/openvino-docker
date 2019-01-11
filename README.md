@@ -9,8 +9,10 @@ sudo usermod -aG docker $USER
 # reload user groups
 exec su -l $USER
 ```
+
 ## Build the docker image
-Run:
+
+Clone this repository and run:
 ```
 ./build.sh
 ```
@@ -27,6 +29,7 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 sudo ldconfig
 ```
+
 ## Test OpenVino on an Intel CPU
 ```
 ./demo_cpu.sh
@@ -55,22 +58,27 @@ Train the network and export it to Onnx using the notebook:
 To get the notbook working, copy it to the `fastai/courses/dl1` folder.
 
 ## Inference
-* Model
+
+### Model
+
 Copy the Onnx model to `code/pomatoes/Modelpotatoestomatoes_softmax.onnx` in this repository
-* Labels
+
+### Labels
+
 Edit the file named `code/pomatoes/pomatoes.labels`, checking that each line contains the
  correct category.
-* Preprocessing
+
+### Preprocessing
+
 Edit the file named `code/pomatoes/classify_pomatoes.py`, verify that the variables
 `resnet_mean` and `resnet_scale` have the correct values
-* Run
+
+### Run
+
 Plug in an NCS, and run:
 ```
 ./run_with_usb.sh pomatoes/pomatoes.sh
 ```
 This script will first convert the model to run on the NCS with OpenVino and then run the
  inference on the images located in `code/pomatoes/tomatoes_potatoes_images`
-
-
-
 

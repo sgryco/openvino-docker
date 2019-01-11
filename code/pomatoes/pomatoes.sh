@@ -8,4 +8,4 @@ python3 /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/mo.py --
 
 # run example application
 
-python3 classify_pomatoes.py -d MYRIAD -m ir/Modelpotatoestomatoes_softmax.xml --labels Modelpotatoestomatoes_softmax.labels -nt 1 -i tomatoes_potatoes_images/*
+python3 classify_pomatoes.py -d MYRIAD -m ir/Modelpotatoestomatoes_softmax.xml --labels pomatoes.labels -nt 1 -i tomatoes_potatoes_images/*
