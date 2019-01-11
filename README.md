@@ -1,4 +1,6 @@
 # OpenVino docker and application example
+These steps will install openvino in a docker container and will run a squeezenet demo on an
+Intel CPU and on a NCS.
 ## Install docker-ce
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -30,7 +32,7 @@ sudo ldconfig
 ./demo_cpu.sh
 ```
 
-## Test OpenVino on an NCS
+## Test OpenVino on a NCS
 ```
 ./demo_myriad.sh
 ```
