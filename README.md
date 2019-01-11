@@ -8,7 +8,8 @@ sudo usermod -aG docker $USER
 exec su -l $USER
 ```
 ## Build the docker image
-Run ```
+Run:
+```
 ./build.sh
 ```
 
@@ -60,7 +61,8 @@ Edit the file named `code/pomatoes/pomatoes.labels`, checking that each line con
 Edit the file named `code/pomatoes/classify_pomatoes.py`, verify that the variables
 `resnet_mean` and `resnet_scale` have the correct values
 * Run
-Plug in an NCS, and run ```
+Plug in an NCS, and run:
+```
 ./run_with_usb.sh pomatoes/pomatoes.sh
 ```
 This script will first convert the model to run on the NCS with OpenVino and then run the
