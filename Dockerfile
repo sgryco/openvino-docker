@@ -27,7 +27,7 @@ RUN apt-get update && apt-get upgrade -y &&\
 
 WORKDIR /app
 
-ARG OV_LINK=http://registrationcenter-download.intel.com/akdlm/irc_nas/15013/l_openvino_toolkit_p_2018.5.445.tgz
+ARG OV_LINK=http://registrationcenter-download.intel.com/akdlm/irc_nas/15078/l_openvino_toolkit_p_2018.5.455.tgz
 
 # installing OpenVINO
 RUN unset no_proxy && unset NO_PROXY &&\
